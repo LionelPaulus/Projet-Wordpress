@@ -9,7 +9,7 @@ autoprefixer
 ];
 
 gulp.task('scss', function() {
-return gulp.src('scss/style.scss')
+return gulp.src('scss/app.scss')
 .pipe(sass())
 .pipe(postcss(processors))
 .pipe(gulp.dest('css'))
@@ -20,6 +20,6 @@ gulp.task('sync', ['scss'], function(){
 		sync.init({
 			server:'./'
 		})
-		gulp.watch("scss/**/*.scss", ['scss']);
+		gulp.watch("scss/*.scss", ['scss']);
 
 });

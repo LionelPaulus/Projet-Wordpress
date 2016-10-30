@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  .container:before {
+    content: "";
+    display: table; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+html, body, ul, p, h1 {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+ul {
+  list-style: none; }
+
+.header {
+  font-family: 'Open Sans';
+  max-width: 100%; }
+
+.header__background {
+  background-size: contain !important;
+  background-position: right !important;
+  background-repeat: no-repeat !important;
+  max-width: 100%;
+  height: 350px; }
+
+.header__welcome {
+  background-color: #333333;
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase; }
+
+.content {
+  margin-top: 50px; }
+
+.content__title {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em; }
+
+.content__text {
+  margin-top: 50px;
+  font-size: 1.2em; }
+
+.content__buttonLink {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #8E8E8E;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 15px 40px; }
+  .content__buttonLink:hover {
+    background-color: #D68158; }
