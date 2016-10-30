@@ -1,0 +1,23 @@
+// Configuration
+@import '../node_modules/zen-grids/sass/zen-grids';
+@import 'conf/zenconf';
+@import 'conf/colors';
+@import 'conf/mixins';
+@import 'conf/mediaqueries';
+@import 'conf/animations';
+@import 'conf/fonts';
+
+//Base 
+@import 'base/base';
+
+//Global
+@import 'global/layout';
+
+//HEADER
+@import 'header/header';
+
+//Content
+@import 'content/content';
+
+//Footer
+@import 'footer/footer';

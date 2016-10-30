@@ -1,0 +1,7 @@
+$zen-columns: 12;
+$zen-gutters: 10px; 
+.container {
+ @include zen-grid-container();
+ width: 80%;
+ margin: 0 auto;
+}
