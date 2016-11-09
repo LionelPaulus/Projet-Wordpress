@@ -12,7 +12,7 @@
 <div class="container">
 	<h1 class="content__title"><?php the_field('pagetitle'); ?></h1>
 	<p class="content__text"><?php the_field('content'); ?></p>
-<a href="#" class="content__buttonLink"><?php the_field('button'); ?></a>
+<a href="<?php the_field('linkbutton'); ?>" class="content__buttonLink"><?php the_field('button'); ?></a>
 </div>
 </section>
 <?php get_footer(); ?>
