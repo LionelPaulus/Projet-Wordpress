@@ -17,6 +17,9 @@
  * @package WordPress
  */
 
+define('WP_HOME','http://localhost:8888/projet-wordpress');
+define('WP_SITEURL','http://localhost:8888/projet-wordpress');
+
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
 define('DB_NAME', 'megaprem_projet-wordpress');
