@@ -1,13 +1,12 @@
 // Configuration
-@import '../node_modules/zen-grids/sass/zen-grids';
-@import 'conf/zenconf';
+@import 'framework/materialize';
 @import 'conf/colors';
 @import 'conf/mixins';
 @import 'conf/mediaqueries';
 @import 'conf/animations';
 @import 'conf/fonts';
 
-//Base 
+//Base
 @import 'base/base';
 
 //Global
@@ -16,11 +15,8 @@
 //HEADER
 @import 'header/header';
 
-// Content
-@import 'content/content';
-
 // Page Template
-@import 'page2/page2';
+@import 'pages/home-trending';
 
 //Footer
 @import 'footer/footer';
