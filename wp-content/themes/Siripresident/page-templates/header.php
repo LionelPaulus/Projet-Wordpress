@@ -2,16 +2,26 @@
 	<div class="header__message">
 		<?php the_field('title'); ?>
 	</div>
-	<div class="header__welcomePage2">
-		<div class="container">
-		<nav class="header__menu">
-			<a class="header__menuItem" href="#">Actualités</a>
-			<a class="header__menuItem" href="#">Programme</a>
-			<a class="header__menuItem" href="#">Voter</a>
-			<a class="header__menuItem" href="#">Devenez militant</a>
-			<a class="header__menuItem" href="#">Donner</a>
-		</nav>
-		</div>
-	</div>
+	<div class="navbar-fixed">
+		<nav>
+    		<div class="nav-wrapper">
+    		<div class="container">
+     			<a href="#!" class="brand-logo">Siri</a>
+      			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+     			<ul class="right hide-on-med-and-down">
+			        <li><a href="#">Notre programme</a></li>
+			        <li><a href="#">Voter</a></li>
+			        <li><a href="#">Lien 3</a></li>
+			        <li><a href="#">Lien 4</a></li>
+      			</ul>
+      			<ul class="side-nav" id="mobile-demo">
+			        <li><a href="#">Notre programme</a></li>
+			        <li><a href="#">Voter</a></li>
+			        <li><a href="#">Lien 3</a></li>
+			        <li><a href="#">Lien 4</a></li>
+      			</ul>
+    		</div>
+    		</div>
+  		</nav>
+  	</div>
 </header>
-<div class="container">
