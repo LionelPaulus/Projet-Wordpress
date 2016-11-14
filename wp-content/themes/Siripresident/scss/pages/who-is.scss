@@ -13,7 +13,7 @@ main {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
 .who-is {
-  height: 100vh;
+  height: calc(100vh - 64px);
   padding-top: 2vh;
   background-size: cover !important;
   background-position: right !important;
