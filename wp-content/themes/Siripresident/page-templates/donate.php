@@ -2,9 +2,8 @@
 /*
 Template Name: Page de donation
 */
-
 ?><?php 
-    require 'inc/paypal.php';
+    require '../inc/paypal.php';
     $paypal = new Paypal();
     $params = array (
 

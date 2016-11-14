@@ -3,7 +3,7 @@
 Template Name: Page de process Paypal
 */
 ?><?php
-	require "inc/paypal.php";
+	require "../inc/paypal.php";
 	$paypal = new Paypal();
 	$response = $paypal->request('GetExpressCheckoutDetails', array(
 		'TOKEN' => $_GET['token'],
