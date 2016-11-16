@@ -25,10 +25,6 @@ jQuery(document).ready(function($){
           'action': 'news_vote',
           'news'  : news,
           'vote' : vote
-        },
-        function(response)
-        {
-          console.log(response);
         }
       );
     }else{
