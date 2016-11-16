@@ -1,0 +1,39 @@
+body {
+  font-size: 1em;
+}
+.Count {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #333333;
+}
+
+.Counter {
+  font-size: 40px;
+  background-color: #333;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+}
+
+.Count__text {
+  margin: auto;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+}
+
+.Counter__number {
+  width: 23px;
+  text-align: center;
+}
+
+.Counter__unit.is-changing {
+  transform: translateY(-100px);
+  transition: transform 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
