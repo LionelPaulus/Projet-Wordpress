@@ -1,0 +1,20 @@
+.description_programmation {
+  width:80%;
+  margin: auto;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.already_visible {
+  transform:translateX(0px);
+  height:calc(100% - 64px);
+  top:96px;
+}
+
+.side-nav h4 {
+  padding: 0 20px;
+}
+
+.programmation_container {
+  margin-left:300px;
+}

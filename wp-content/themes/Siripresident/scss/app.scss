@@ -1,5 +1,5 @@
 // Configuration
-@import 'framework/materialize';
+@import 'materialize';
 @import 'conf/colors';
 @import 'conf/mixins';
 @import 'conf/mediaqueries';
@@ -16,7 +16,12 @@
 @import 'header/header';
 
 // Page Template
+@import 'pages/who-is';
 @import 'pages/home-trending';
+@import 'pages/home-news';
+@import 'pages/single-post';
+@import 'pages/vote';
+@import 'pages/programmation';
 
 //Footer
 @import 'footer/footer';
