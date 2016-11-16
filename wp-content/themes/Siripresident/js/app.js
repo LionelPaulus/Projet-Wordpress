@@ -1,47 +1,67 @@
-
 jQuery(document).ready(function($){
-
-    jQuery(document).ready(function($){
-        var currentlySearching = false;
-
-        $(".send-my-vote").on("click", function(e){
-            e.preventDefault();
-            var news = this.dataset.news;
-
-            if(localStorage.getItem(news) === null){
-                this.style.color = "#ffd8a6";
-                localStorage.setItem(news, 1);
-            }
-        });
-    });
-
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
+  // Materialize modal
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal').modal();
 
 
-    // Ajax for article category
+  //////////
+  //LIONEL//
+  //////////
 
-    $("#slide-out a").on("click",function(e){
-        e.preventDefault();
-        var term_id = $(this).attr("data-id");
+  // Ajax for news vote
+  var currentlyVoting = false;
+  $(".send-my-vote").on("click", function(e){
+    e.preventDefault();
+    var news = this.dataset.news;
+    var vote = this.dataset.vote;
 
-        var content= $(".description_programmation");
-        $(".slide-out a").removeClass("current");
-        $(this).addClass("current");
-        content.empty().append("Recherche en cours...");
+    if(localStorage.getItem(news) === null){
+      this.style.color = "#ffd8a6";
+      localStorage.setItem(news, 1);
 
-        jQuery.post(
-            ajaxurl,
-            {
+      jQuery.post(
+        ajaxurl,
+        {
+          'action': 'news_vote',
+          'news'  : news,
+          'vote' : vote
+        },
+        function(response)
+        {
+          console.log(response);
+        }
+      );
+    }else{
+      alert('Vous avez déjà voté pour cette actualité.');
+    }
+  });
 
-                'action'  : 'filtre-category',
-                'term_id' : term_id,
-                'paged'   : 1
-            },
-            function(response)
-            {
-                console.log(response);
-            }
-        );
-    });
+
+  /////////
+  //LOUIS//
+  /////////
+
+  // Ajax for article category
+  $("#slide-out a").on("click",function(e){
+    e.preventDefault();
+    var term_id = $(this).attr("data-id");
+
+    var content= $(".description_programmation");
+    $(".slide-out a").removeClass("current");
+    $(this).addClass("current");
+    content.empty().append("Recherche en cours...");
+
+    jQuery.post(
+      ajaxurl,
+      {
+        'action'  : 'filtre-category',
+        'term_id' : term_id,
+        'paged'   : 1
+      },
+      function(response)
+      {
+        console.log(response);
+      }
+    );
+  });
 });

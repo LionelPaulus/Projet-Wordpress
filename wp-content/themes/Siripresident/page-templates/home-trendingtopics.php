@@ -37,8 +37,8 @@
             <span class="card-title"><?=$value->name?></span>
           </div>
           <div class="card-action">
-            <a href="#" class="send-my-vote" data-news="<?=$value->name?>"><i class="material-icons">thumb_up</i></a>
-            <a href="#" class="send-my-vote" data-news="<?=$value->name?>"><i class="material-icons">thumb_down</i></a>
+            <a href="#" class="send-my-vote" data-news="<?=$value->name?>" data-vote="like"><i class="material-icons">thumb_up</i></a>
+            <a href="#" class="send-my-vote" data-news="<?=$value->name?>" data-vote="dislike"><i class="material-icons">thumb_down</i></a>
           </div>
         </div>
       </div>
