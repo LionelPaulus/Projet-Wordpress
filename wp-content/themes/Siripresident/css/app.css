@@ -6645,3 +6645,31 @@ main {
   background-size: cover !important;
   background-position: right !important;
   background-repeat: no-repeat !important; }
+
+.news .card {
+  margin-top: 50px;
+  margin-right: 40px;
+  margin-left: 30px !important;
+  height: 530px; }
+
+.news .card-image {
+  height: 200px; }
+
+.news .card-image img {
+  height: 100%; }
+
+.beforenews {
+  height: 70px;
+  background-color: #333333; }
+
+.content {
+  border: 1px solid red; }
+
+.new {
+  height: auto; }
+
+.new h2 {
+  color: white; }
+
+.page-footer {
+  margin-top: 0; }
