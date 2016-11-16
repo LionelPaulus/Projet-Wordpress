@@ -9,16 +9,10 @@
      			<a href="#!" class="brand-logo">Siri</a>
       			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
      			<ul class="right hide-on-med-and-down">
-			        <li><a href="#">Notre programme</a></li>
-			        <li><a href="#">Voter</a></li>
-			        <li><a href="#">Lien 3</a></li>
-			        <li><a href="#">Lien 4</a></li>
+                    <?php wp_nav_menu(array('theme_location' => 'principal')); ?>
       			</ul>
       			<ul class="side-nav" id="mobile-demo">
-			        <li><a href="#">Notre programme</a></li>
-			        <li><a href="#">Voter</a></li>
-			        <li><a href="#">Lien 3</a></li>
-			        <li><a href="#">Lien 4</a></li>
+                    <?php wp_nav_menu(array('theme_location' => 'principal')); ?>
       			</ul>
     		</div>
     		</div>
