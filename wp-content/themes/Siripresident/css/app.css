@@ -6649,7 +6649,14 @@ main {
   margin-top: 50px;
   margin-right: 40px;
   margin-left: 30px !important;
-  height: 530px; }
+  height: 530px;
+  padding: 0 !important; }
+
+.news .card .card-content {
+  padding: 30px !important; }
+
+.news .card .card-action {
+  padding: 30px !important; }
 
 .news .card-image {
   height: 200px; }
@@ -6660,9 +6667,6 @@ main {
 .beforenews {
   height: 70px;
   background-color: #333333; }
-
-.content {
-  border: 1px solid red; }
 
 .new {
   height: auto; }
