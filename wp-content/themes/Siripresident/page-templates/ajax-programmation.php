@@ -7,12 +7,12 @@
  */
 
 $args=array(
-    'post_type' => 'post',
+    'post_type' => 'programmations',
     'posts_per_page' => 50,
     'paged' => $paged,
     'tax_query' => array(
         array(
-            'taxonomy' => 'category',
+            'taxonomy' => 'categorie-programmation',
             'field'    => 'term_id',
             'terms'    => $term_id,
         ),
