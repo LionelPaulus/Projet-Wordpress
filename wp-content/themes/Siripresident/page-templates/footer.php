@@ -32,8 +32,8 @@ $wpdb->insert(
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2016 Siri_2017 Projet WordPress
-            <a class="grey-text text-lighten-4 right" href="#!">Our Github</a>
+            © 2016 Siri 2017 Projet WordPress
+            <a class="grey-text text-lighten-4 right" href="https://github.com/LionelPaulus/Projet-Wordpress" target="_blank">Our Github</a>
             </div>
           </div>
         </footer>
