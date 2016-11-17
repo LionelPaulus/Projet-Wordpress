@@ -6612,8 +6612,11 @@ body {
   display: block; }
 
 .Counter__number {
-  width: 23px;
-  text-align: center; }
+  text-align: center;
+  background-color: #b9b9b9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px; }
 
 .Counter__unit.is-changing {
   -webkit-transform: translateY(-100px);
