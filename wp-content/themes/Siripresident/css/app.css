@@ -6578,6 +6578,7 @@ body {
 
 .Count {
   font-size: 1em;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6597,7 +6598,7 @@ body {
   font-size: 40px;
   background-color: #333;
   color: #fff;
-  height: 60px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
