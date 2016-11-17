@@ -6716,7 +6716,8 @@ ul {
   margin: auto;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
-  height: 560px; }
+  height: 560px;
+  overflow: auto; }
 
 .already_visible {
   -webkit-transform: translateX(0px);
