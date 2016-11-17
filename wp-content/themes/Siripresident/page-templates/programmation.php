@@ -1,22 +1,19 @@
-<?php
-/*
-Template Name: Page de programme
-*/
-?><?php  //appel du template header.php
+<?php  //appel du template header.php
 
 
 get_header();
+get_template_part('page-templates/header');
 $args=array(
-'post_type' => 'post',
-'posts_per_page' => 50,
-'paged' => $paged,
-'tax_query' => array(
-array(
-'taxonomy' => 'category',
-'field'    => 'term_id',
-'terms'    => $term_id,
-),
-)
+    'post_type' => 'post',
+    'posts_per_page' => 50,
+    'paged' => $paged,
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'category',
+            'field'    => 'term_id',
+            'terms'    => $term_id,
+        ),
+    )
 );
 
 // The Query
@@ -50,31 +47,15 @@ $the_query = new WP_Query( $args );
 
     </ul>
     <div class="programmation_container">
-    <div class="card-panel white accent-1 description_programmation">
-        <h4>Notre Programme</h4>
-        <p>Retrouvez tous les projets de campagnes que Siri mettra en place une fois élu.
-            N'hésitez pas à modifier l'emplacement des différents projets dans leurs ordre d'importance selon vous,(les plus importants en haut).</p>
-        <?php
+        <div class="card-panel white accent-1 description_programmation">
+            <h4>Notre Programme</h4>
+            <p>Retrouvez tous les projets de campagnes que Siri mettra en place une fois élu.
+                N'hésitez pas à modifier l'emplacement des différents projets dans leurs ordre d'importance selon vous,(les plus importants en haut).</p>
+            <div class="article_prog">
 
-        // boucle WordPress
-        if ($the_query->have_posts()){
-            while ($the_query->have_posts()){
-                $the_query->the_post();
-                ?>
-                <div class="card-panel white accent-1">
-                <h4><?php the_title()?></h4>
-                    <h3><?php the_terms( get_the_ID(), 'economie', 'Catégories: ', ' / ' ); ?></h3>
-                <?php the_excerpt(); ?><span class="read_more"></div>
-                <?php
-            }}else {
-            ?>
-            Nous n'avons pas trouvé d'article répondant à votre recherche
+            </div>
 
-            <?php
-        }
-        ?>
-
-    </div>
+        </div>
     </div>
 
 
@@ -87,4 +68,11 @@ $the_query = new WP_Query( $args );
 <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
 
 </body>
+
+<?php
+
+get_template_part('page-templates/footer');
+
+get_footer();
+?>
 </html>
