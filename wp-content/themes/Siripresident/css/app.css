@@ -3173,7 +3173,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
+  font-family: "myriad-pro",sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
@@ -6600,6 +6600,7 @@ body {
   background: -webkit-radial-gradient(center ellipse, #b9b9b9 0%, #8c8c8c 100%);
   background: radial-gradient(ellipse at center, #b9b9b9 0%, #8c8c8c 100%);
   color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
