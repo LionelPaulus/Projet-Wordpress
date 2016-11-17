@@ -6722,9 +6722,9 @@ ul {
 .already_visible {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  height: calc(100% - 140px);
+  height: 100%;
   top: 96px;
-  position: absolute !important;
+  position: absolute;
   z-index: 0 !important; }
 
 .side-nav h4 {
@@ -6732,6 +6732,22 @@ ul {
 
 .programmation_container {
   margin-left: 300px; }
+
+.page-footer {
+  z-index: 1; }
+
+@media screen and (max-width: 800px) {
+  .programmation_container {
+    margin-left: 0px; }
+  .already_visible {
+    width: 100%;
+    padding-bottom: 0px;
+    position: relative;
+    top: 0px; }
+  .already_visible li {
+    text-align: center;
+    width: 25%;
+    display: inline-block; } }
 
 .page-footer {
   margin-top: 0; }
