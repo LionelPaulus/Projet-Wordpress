@@ -12,7 +12,7 @@ Template Name: Page de donation
 ?>
 
   <div class="container">
-  <h1 class="text-center"><?php the_title(); ?></h1>
+  <h2 class="center"><?php the_title(); ?></h2>
       <?php
     if (have_posts()){
         while (have_posts()){
