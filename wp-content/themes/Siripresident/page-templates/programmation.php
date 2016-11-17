@@ -10,7 +10,7 @@ get_template_part('page-templates/header');
 <section>
     <ul id="slide-out" class="side-nav already_visible">
         <?php
-        $terms = get_terms('category', 'hide_empty=0');
+        $terms = get_terms('categorie-programmation', 'hide_empty=0');
 
         if (!empty($terms) && !is_wp_error($terms)) {
 
