@@ -5,7 +5,7 @@
                 <h5 class="white-text">Recevez la newsletter</h5>
                 <div class="row">
         			<div class="input-field col s12">
-         				<input id="email" type="email" class="validate">
+         				<input style="color: #fff !important;" id="email" type="email" class="validate">
           				<label for="email">Email</label>
         			</div>
       			</div>
