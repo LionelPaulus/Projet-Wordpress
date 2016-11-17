@@ -52,7 +52,7 @@ Template Name: Page voter
             </div>
         </div>
     <div class="card-panel white accent-1 join_block">
-        <?php echo    do_shortcode('[contact-form-7 id="64" title="Formulaire de contact 1"]'); ?>
+        <?php echo    do_shortcode('[contact-form-7 id="119" title="formulaire militant (page vote)"]'); ?>
     </div>
         </div>
     <div class=" googlemap_block">
