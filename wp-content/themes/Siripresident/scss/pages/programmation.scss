@@ -3,12 +3,15 @@
   margin: auto;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
+  height:560px;
 }
 
 .already_visible {
   transform:translateX(0px);
-  height:calc(100% - 64px);
+  height:calc(100% - 140px);
   top:96px;
+  position:absolute !important;
+  z-index:0 !important;
 }
 
 .side-nav h4 {
@@ -18,3 +21,4 @@
 .programmation_container {
   margin-left:300px;
 }
+
