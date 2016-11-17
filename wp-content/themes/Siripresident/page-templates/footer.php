@@ -1,11 +1,21 @@
-	  <footer class="page-footer">
+<?php
+$email = htmlspecialchars($_POST['email']);
+$wpdb->insert(
+  $wpdb->prefix.'newsletter',
+  array(
+    'email' => $email
+  )
+);
+die();
+?>
+    <footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Recevez la newsletter</h5>
                 <div class="row">
         			<div class="input-field col s12">
-         				<input style="color: #fff !important;" id="email" type="email" class="validate">
+         				<input style="color: #fff !important;" name="email" id="email" type="email" class="validate">
           				<label for="email">Email</label>
         			</div>
       			</div>
