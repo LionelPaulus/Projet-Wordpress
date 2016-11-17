@@ -13,6 +13,7 @@ Template Name: Page de donation
 
   <div class="container">
   <h2 class="center"><?php the_title(); ?></h2>
+  <div class="row">
       <?php
     if (have_posts()){
         while (have_posts()){
@@ -23,6 +24,7 @@ Template Name: Page de donation
     }
     }
     ?>
+  </div>
   </div>
 
 <?php
