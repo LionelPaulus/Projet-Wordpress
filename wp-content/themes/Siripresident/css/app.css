@@ -6711,6 +6711,14 @@ main {
 ul {
   list-style-type: circle !important; }
 
+@media screen and (max-width: 800px) {
+  .left_container {
+    width: auto; }
+  iframe {
+    width: 100%; }
+  .googlemap_block {
+    width: 95%; } }
+
 .description_programmation {
   width: 80%;
   margin: auto;
