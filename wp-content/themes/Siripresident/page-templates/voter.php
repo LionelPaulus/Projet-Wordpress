@@ -1,4 +1,8 @@
-<?php get_header(); //appel du template header.php  ?>
+<?php
+/*
+Template Name: Page voter
+*/
+?><?php get_header(); //appel du template header.php  ?>
 <body>
 
 <section>
