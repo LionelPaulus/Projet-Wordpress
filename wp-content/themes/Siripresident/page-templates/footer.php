@@ -6,7 +6,6 @@ $wpdb->insert(
     'email' => $email
   )
 );
-die();
 ?>
     <footer class="page-footer">
           <div class="container">
