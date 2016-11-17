@@ -1,4 +1,8 @@
-<?php  //appel du template header.php
+<?php
+/*
+Template Name: Page de programme
+*/
+?><?php  //appel du template header.php
 
 
 get_header();
