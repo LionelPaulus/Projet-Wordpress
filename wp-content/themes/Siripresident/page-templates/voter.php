@@ -2,7 +2,10 @@
 /*
 Template Name: Page voter
 */
-?><?php get_header(); //appel du template header.php  ?>
+?><?php
+get_header();
+get_template_part('page-templates/header');
+?>
 <body>
 
 <section>
@@ -66,4 +69,10 @@ Template Name: Page voter
 <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
 
 </body>
+<?php
+
+get_template_part('page-templates/footer');
+
+get_footer();
+?>
 </html>
