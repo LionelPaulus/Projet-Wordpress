@@ -6645,6 +6645,9 @@ main {
   background-position: right !important;
   background-repeat: no-repeat !important; }
 
+.content__text {
+  font-size: 22px; }
+
 .news .card {
   margin-top: 50px;
   margin-right: 40px;
