@@ -6597,6 +6597,8 @@ body {
 .Counter {
   font-size: 40px;
   background-color: #333;
+  background: -webkit-radial-gradient(center ellipse, #b9b9b9 0%, #8c8c8c 100%);
+  background: radial-gradient(ellipse at center, #b9b9b9 0%, #8c8c8c 100%);
   color: #fff;
   height: 80px;
   display: -webkit-box;
