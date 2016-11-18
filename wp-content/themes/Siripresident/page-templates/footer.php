@@ -14,8 +14,10 @@ $wpdb->insert(
                 <h5 class="white-text">Recevez la newsletter</h5>
                 <div class="row">
         			<div class="input-field col s12">
+              <form action="<?php echo get_home_url(); ?>">
          				<input style="color: #fff !important;" name="email" id="email" type="email" class="validate">
-          				<label for="email">Email</label>
+          				<label for="email">Email</label> <button class="btn waves-effect waves-light" type="submit" name="action">Valider</button>
+              </form>
         			</div>
       			</div>
               </div>
