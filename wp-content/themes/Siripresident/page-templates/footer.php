@@ -1,4 +1,5 @@
 <?php
+if (!empty($_POST['email'])) {
 $email = htmlspecialchars($_POST['email']);
 $wpdb->insert(
   $wpdb->prefix.'newsletter',
@@ -6,6 +7,7 @@ $wpdb->insert(
     'email' => $email
   )
 );
+}
 ?>
     <footer class="page-footer">
           <div class="container">
@@ -14,7 +16,7 @@ $wpdb->insert(
                 <h5 class="white-text">Recevez la newsletter</h5>
                 <div class="row">
         			<div class="input-field col s12">
-              <form action="<?php echo get_home_url(); ?>">
+              <form action="#">
          				<input style="color: #fff !important;" name="email" id="email" type="email" class="validate">
           				<label for="email">Email</label> <button class="btn waves-effect waves-light" type="submit" name="action">Valider</button>
               </form>
