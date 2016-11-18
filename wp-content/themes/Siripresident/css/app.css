@@ -3168,12 +3168,17 @@ nav {
   src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700; }
 
+@font-face {
+  font-family: "Apple";
+  src: url("../fonts/roboto/../Apple/System San Francisco Text Medium.ttf");
+  font-weight: 400; }
+
 a {
   text-decoration: none; }
 
 html {
   line-height: 1.5;
-  font-family: 'Open Sans Condensed',sans-serif;
+  font-family: 'Apple',sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
