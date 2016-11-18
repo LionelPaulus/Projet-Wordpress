@@ -6,7 +6,7 @@
 		<nav>
     		<div class="nav-wrapper">
     		<div class="container">
-     			<a href="#!" class="brand-logo">Siri</a>
+     			<a href="<?php echo get_home_url(); ?>" class="brand-logo">Siri</a>
       			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
      			<ul class="right hide-on-med-and-down">
                     <?php wp_nav_menu(array('theme_location' => 'principal')); ?>

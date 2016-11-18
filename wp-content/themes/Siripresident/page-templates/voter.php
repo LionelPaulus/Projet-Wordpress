@@ -1,4 +1,11 @@
-<?php get_header(); //appel du template header.php  ?>
+<?php
+/*
+Template Name: Page voter
+*/
+?><?php
+get_header();
+get_template_part('page-templates/header');
+?>
 <body>
 
 <section>
@@ -48,7 +55,7 @@
             </div>
         </div>
     <div class="card-panel white accent-1 join_block">
-        <?php echo    do_shortcode('[contact-form-7 id="64" title="Formulaire de contact 1"]'); ?>
+        <?php echo    do_shortcode('[contact-form-7 id="119" title="formulaire militant (page vote)"]'); ?>
     </div>
         </div>
     <div class=" googlemap_block">
@@ -62,4 +69,10 @@
 <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
 
 </body>
+<?php
+
+get_template_part('page-templates/footer');
+
+get_footer();
+?>
 </html>
