@@ -1,7 +1,7 @@
 .news .card {
 	margin-top:50px;
 	margin-right: 40px;
-	margin-left: 30px!important;
+	margin-left: 30px;
 	height: 530px;
 	padding: 0!important;
 }
@@ -25,4 +25,37 @@
 .beforenews {
 	height : 70px;
 	background-color: #333333;
+}
+
+@media only screen and (max-width: 450px) {
+	.news .card {
+	height: auto;
+	margin-right:0px!important;
+	margin-left:0px;
+	width: 100%;
+	}
+	.news .card .card-content {
+	font-size:15px;
+}
+}
+
+@media only screen and (max-width: 700px) {
+	.news .card {
+	height: auto;
+	margin-right:10px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.news .card {
+	height: 550px;
+	margin-right:10px;
+	}
+}
+
+
+@media only screen and (min-width: 1200px) {
+	.news .card {
+	margin-left:30px!important;
+	}
 }
