@@ -18,7 +18,7 @@ $args=array(
     )
 );
 
-var_dump($args);
+
 // The Query
 //$wp_query->max_num_pages
 $the_query = new WP_Query( $args );
