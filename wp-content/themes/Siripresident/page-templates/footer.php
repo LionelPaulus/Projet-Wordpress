@@ -1,6 +1,6 @@
 <?php
-if (!empty($_POST['email'])) {
-$email = $_POST['email'];
+if (!empty($_GET['email'])) {
+$email = $_GET['email'];
 echo $email;
 $wpdb->insert(
   $wpdb->prefix.'newsletter',
