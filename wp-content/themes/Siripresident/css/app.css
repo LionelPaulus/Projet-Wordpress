@@ -6642,6 +6642,9 @@ main {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto; }
+  @media (max-width: 968px) {
+    main {
+      display: none; } }
 
 .who-is {
   height: calc(100vh - 64px);

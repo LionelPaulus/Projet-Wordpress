@@ -2,7 +2,7 @@
 <div class="container">
 	<h1 class="content__title center white-text"><?php the_field('pagetitle'); ?></h1>
 	<div class="content__text center white-text"><?php the_field('content'); ?></div>
-		<main>
+	<main class="siri-wave">
 	<script type="text/javascript">
 		 function SiriWave(opt) {
 	opt = opt || {};
