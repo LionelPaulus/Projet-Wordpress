@@ -7,6 +7,7 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<title>Siri Président</title>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <?php wp_head(); ?>
     </head>

@@ -3173,7 +3173,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "myriad-pro",sans-serif;
+  font-family: 'Open Sans Condensed',sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
