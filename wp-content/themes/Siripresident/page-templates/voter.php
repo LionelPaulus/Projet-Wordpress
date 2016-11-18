@@ -12,8 +12,7 @@ get_template_part('page-templates/header');
         <div class="left_container">
         <div class="card-panel white accent-1 text-vote">
             <h4>N'attendez plus pour agir !</h4>
-            <p>Venez voter le 20 novembre 2017 pour votre candidat preféré ! Vous trouverez ci-dessous la carte de tous les bureaux de vote de france.
-            Inscrivez votre adresse pour localiser le bureau de vote le plus proche de chez vous !</p>
+            <p>Venez voter le 20 novembre 2017 pour votre candidat preféré ! Vous trouverez ci-dessous la carte de tous les bureaux de vote de france.</p>
             <div class="valign-wrapper">
                 <!-- Modal Trigger -->
                 <a class="waves-effect waves-light btn " href="#modal1">Modalités</a>
