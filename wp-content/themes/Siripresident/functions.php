@@ -59,7 +59,3 @@ function create_custom_taxonomy() {
     );
     register_taxonomy( 'categorie-programmation','programmations', $args );
 };
-?>
-
-
-
