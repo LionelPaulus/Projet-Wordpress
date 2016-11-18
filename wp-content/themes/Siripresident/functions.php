@@ -4,6 +4,9 @@ include_once 'inc/removeversion.php';
 include_once 'inc/menu.php';
 include_once 'inc/sirisetup.php';
 include_once 'inc/ajax.php';
+// THEME SUPPORT
+include_once('inc/theme_support.php');
+
 
 
 add_action('init','create_custom_post_type_annonces');
@@ -27,7 +30,7 @@ function create_custom_post_type_annonces(){
     $args = array(
         'labels'              => $labels,
         'hierarchical'        => false,
-        'supports'            => array( 'title','thumbnail','editor', 'comments'),
+        'supports'            => array( 'title','thumbnail','editor'),
         'public'              => true,
         'show_ui'             => true,
         'show_in_menu'        => true,
@@ -57,3 +60,6 @@ function create_custom_taxonomy() {
     register_taxonomy( 'categorie-programmation','programmations', $args );
 };
 ?>
+
+
+

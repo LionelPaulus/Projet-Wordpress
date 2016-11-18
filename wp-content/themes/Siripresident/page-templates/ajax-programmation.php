@@ -5,7 +5,6 @@
  * Date: 16/11/2016
  * Time: 18:07
  */
-
 $args=array(
     'post_type' => 'programmations',
     'posts_per_page' => 50,
@@ -19,6 +18,7 @@ $args=array(
     )
 );
 
+var_dump($args);
 // The Query
 //$wp_query->max_num_pages
 $the_query = new WP_Query( $args );
@@ -30,6 +30,14 @@ if ($the_query->have_posts()){
         ?>
         <div class="card-panel white accent-1 text_prog" draggable="true">
             <h4><?php the_title()?></h4>
+            <?php
+            if(has_post_thumbnail())
+            {
+                echo '<div class="backgroundProject">';
+                the_post_thumbnail("thumbnail_prog");
+                echo '</div>';
+            }
+            ?>
 
             <?php the_excerpt(); ?><span class="read_more"></div>
         <?php
@@ -40,3 +48,4 @@ if ($the_query->have_posts()){
     <?php
 }
 ?>
+

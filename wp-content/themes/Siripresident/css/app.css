@@ -6781,8 +6781,23 @@ ul {
 .programmation_container {
   margin-left: 300px; }
 
+.text-prog {
+  position: relative; }
+
 .page-footer {
   z-index: 1; }
+
+.backgroundProject {
+  position: absolute;
+  opacity: 0.4;
+  top: 0px;
+  left: 0px; }
+
+.backgroundProject img {
+  max-width: 100%; }
+
+.text_prog {
+  position: relative; }
 
 @media screen and (max-width: 800px) {
   .programmation_container {
