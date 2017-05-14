@@ -17,18 +17,21 @@
  * @package WordPress
  */
 
+// ** Heroku Postgres settings - from Heroku Environment ** //
+$db = parse_url($_ENV["DATABASE_URL"]);
+
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('DB_NAME', 'megaprem_projet-wordpress');
+define('DB_NAME', trim($db["path"],"/"));
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', 'megaprem_projetW');
+define('DB_USER', $db["user"]);
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', '5d*}5MgFdszT');
+define('DB_PASSWORD', $db["pass"]);
 
 /** Adresse de l’hébergement MySQL. */
-define('DB_HOST', '178.79.169.213');
+define('DB_HOST', $db["host"]);
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8mb4');
